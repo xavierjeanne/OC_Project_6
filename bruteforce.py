@@ -72,16 +72,3 @@ def find_best_combination(stocks, max_budget=500):
     return best_combination, best_cost, best_profit
 
 
-if __name__ == "__main__":
-
-    file_path = "dataset/action.csv"
-    stocks = read_stocks(file_path)
-
-    best_combination, best_cost, best_profit = find_best_combination(stocks)
-
-    print("Meilleure combinaison d'actions:")
-    for stock in best_combination:
-        print(f"{stock['name']}: {stock['price']} €, {stock['profit_percentage'] * 100:.2f}%")
-
-    print(f"Coût total: {best_cost} €")
-    print(f"Bénéfice total: {best_profit} €")

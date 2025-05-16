@@ -33,4 +33,4 @@ Dans un premier temps, le programme utilise la méthode brute force pour trouver
    pip install -r requirements.txt
 
 4. Executer le script :
-   python brute-force.py
+   python bruteforce.py
