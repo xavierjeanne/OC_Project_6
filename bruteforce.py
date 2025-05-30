@@ -80,4 +80,4 @@ if __name__ == "__main__":
     for stock in best_combination:
         print(f"{stock['name']} - {stock['price']}€ - {stock['profit_percentage']*100}%")
     print(f"Coût total : {total_cost}€")
-    print(f"Bénéfice total : {total_profit}€")  
+    print(f"Bénéfice total : {total_profit}€") 

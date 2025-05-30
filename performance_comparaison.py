@@ -44,10 +44,12 @@ if __name__ == "__main__":
     
     best_combination, best_cost, best_profit = knapsack_solution(stocks)
 
-    print("Meilleure combinaison d'actions:")
+    print("\nMeilleure combinaison d'actions (Optimized):")
+    
     for stock in best_combination:
-        print(f"{stock['name']}: {stock['price']} €,"
-              f"{stock['profit_percentage'] * 100:.2f}%")
+        name, price, profit = stock  # Unpack the tuple
+        profit_percentage = profit / price  # Calculate percentage from profit
+        print(f"{name}: {price} €, {profit_percentage * 100:.2f}%")
 
     print(f"Coût total: {best_cost} €")
     print(f"Bénéfice total: {best_profit} €")
